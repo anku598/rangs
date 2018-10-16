@@ -1,0 +1,239 @@
+// ----- Varaibles -----
+$nav-scroller-btn-width: 44px;
+$nav-scroller-btn-height: 55px;
+$nav-scroller-scrollbar: 30px;
+
+
+// ----- Core styles -----
+.nav-scroller, .nav-scroller-wrapper {
+  display: flex;
+  background: #0C1D4D;
+}
+
+.nav-scroller {
+  position: sticky;
+  top: 89px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 5;
+  transition: all 0.6s ease;
+
+  @include mediaSm {
+    top: 77px;
+  }
+
+  
+  @include mediaXs {
+    top: 76px;
+  }
+}
+
+// .top-sticky{
+//   position: sticky;
+//   top: 0;
+// }
+
+// .down-sticky{
+//   position: sticky;
+//   top: 0px;
+// }
+
+
+.nav-scroller-nav {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+  align-self: center;
+  
+  // Hide scrollbar
+  padding-bottom: $nav-scroller-scrollbar;
+  margin-bottom: -$nav-scroller-scrollbar;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.nav-scroller-content {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  min-height: $nav-scroller-btn-height; // Ensures full button is visible
+  transition: transform .25s cubic-bezier(0.645, 0.045, 0.355, 1.000); // easeInOutCubic
+
+  @include mediaSm{
+    min-height: 44px;
+  }
+
+  
+  @include mediaXs{
+  min-height: 44px;
+  }
+  
+  &.no-transition {
+    transition: none;
+  }
+}
+
+ul.nav-scroller-content {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-scroller-item {
+  //flex: 1 0 auto;
+  display: block;
+  font-size: 1.125rem;
+  //text-align: center;
+  padding: 0rem 0.5rem;
+  
+  @include mediaSm{
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  
+  @include mediaXs{
+    // margin-top: 20px;
+    font-size: 0.9rem;
+  }
+
+
+  .horizontal-btn{
+    text-decoration: none;
+    color:#ffffff;
+    font-family: 'Rajdhani',sans-serif;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:hover{
+      outline: none;
+    }
+    &:focus{
+      outline: 0px;
+    }
+  }
+  
+  &:not(:last-child) {
+    //border-right: 1px solid #ddd;
+  }
+
+  .tab-active{
+    background: red;
+  }
+  
+}
+
+.nav-scroller-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: $nav-scroller-btn-width;
+  height: 100%;
+  padding: .5rem;
+  font-size: 1.25rem;
+  background: #0C1D4D;
+  //color: #707070;
+  //border: 1px solid #ddd;
+  transition: color .3s, opacity .3s;
+  cursor: pointer;
+  border: none;
+  
+  &:hover {
+    color: #666;
+  }
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:not(.active) {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.nav-scroller-btn--left {
+  left: 0;
+}
+
+.nav-scroller-btn--right {
+  right: 0;
+}
+
+
+
+// ----- Optional styles -----
+// Wrapper to put other elements inline with the scroller
+.nav-scroller-wrapper {
+  
+}
+
+.nav-scroller-logo {
+  display: inline-block;
+  padding: .5rem;
+  margin-right: 1rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+
+
+// ----- Variations -----
+// Buttons are always visible and inline rather than hidden and overlaid on the nav
+.nav-scroller--controls-inline {
+  
+  .nav-scroller-content {
+    padding: 0 $nav-scroller-btn-width;
+  }
+  
+  .nav-scroller-btn {
+    &:not(.active) {
+      color: #ddd;
+      opacity: 1;
+    }
+  }
+  
+}
+
+// Nav expands to fill available space
+.nav-scroller--expand {
+  
+  .nav-scroller-nav, .nav-scroller-content {
+    width: 100%;
+    // padding-left: 1.1em;
+    // padding-right: 1.1em;
+  }
+}
+
+// Nav aligns to the right
+.nav-scroller--right {
+  
+  .nav-scroller-nav {
+    margin-left: auto;
+  }
+}
+
+// CSS scroll snap points is used to align the links on manual scroll not on button click. https://css-tricks.com/practical-css-scroll-snapping/
+.nav-scroller--snap {
+  
+  .nav-scroller-nav {
+    scroll-snap-type: x proximity;
+    scroll-padding: 0 $nav-scroller-btn-width;
+  }
+  
+  .nav-scroller-item {
+    scroll-snap-align: start;
+    
+  }
+  
+  // Disable snap points when it is advanced using the button click
+  .nav-scroller-content.no-transition .nav-scroller-item {
+    scroll-snap-align: none;
+    
+  }
+}

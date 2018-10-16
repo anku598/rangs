@@ -1,0 +1,462 @@
+@import 'config';
+
+
+
+.scrollmenu{
+  background: #0C1D4D;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-around;
+  a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    &:hover{
+      background: #BA4141;
+    }
+  }
+}
+
+.industries{
+  height: 75vh;
+  background: url("../img/industries/industriesbg.jpg") no-repeat,linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h2{
+    color: #fff;
+    font-size: calc(22px + 7vmin);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Rajdhani',sans-serif;
+    
+  }
+  p{
+    color: #fff;
+    line-height: 1.5em;
+    font-size: calc(15px + 0.4vmin);
+    font-weight: 300;
+    font-family: 'Roboto',sans-serif;
+    max-width: 70%;
+    margin: 0 auto;
+
+    @include mediaSm{
+      max-width: 90%;
+    }
+
+    
+    @include mediaXs{
+      max-width: 90%;
+    }
+  }
+}
+
+.up-sticky{
+  position: sticky;
+  top: 0;
+}
+.down-sticky{
+  position: sticky;
+  top: 100px;
+}
+
+
+.about-industries{
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  
+  
+  @include mediaXs {
+    .columnreverse{
+      flex-direction: column-reverse;
+    }
+  }
+  
+  @include mediaSm {
+    .columnreverse{
+      flex-direction: column-reverse;
+    }
+  }
+  
+  
+  
+  .rangs-auto{
+    position: relative;
+    
+  }
+  .right-tab{
+    left: 0;
+  }
+  .left-tab{
+    right: 0;
+  }
+  .left-tab,.right-tab{
+    position: absolute;
+    top: 32%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    a{
+      background: #fff;
+      padding: 1.5em;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 500;
+      color: #2E2E2E;
+      font-size: calc(12px + 0.3vw);
+      p{
+        margin: 0;
+        &.active{
+          border-bottom: 1px solid red;
+          padding-bottom: 20px;
+        }
+      }
+      &:hover{
+        color: #0C1D4D;
+        background: #FBE9EE;
+      }
+      
+    }
+  }
+  .bg-gap{
+    width: 100%;
+    height: 120px;
+    background: #F3F3F3;
+    position: absolute;
+    @include mediaMd {
+      height: 80px;
+    }
+    
+    @include mediaSm {
+      display: none
+    }
+    
+    @include mediaXs {
+      display: none;
+    }
+  }
+  .bg-gap2{
+    width: 100%;
+    height: 200px;
+    background: #F3F3F3;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    @include mediaMd {
+      height: 100px;
+    }
+    
+    
+    @include mediaSm {
+      display: none
+    }
+    
+    @include mediaXs {
+      display: none;
+    }
+  }
+
+  .content-img{
+    @include mediaSm{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    
+    @include mediaXs{
+      width: 85%;
+      margin: 0 auto;
+  }
+  }
+  
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+
+    
+
+    @include mediaXs{
+      .content-img{
+        width: 85%;
+        margin: 0 auto;
+      }
+    }
+
+    .cname-right,.cname-left{
+      @include mediaMd{
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+      
+      @include mediaSm{
+        display: flex;
+        flex-direction: column;
+       
+      }
+
+      
+      @include mediaXs{
+        display: flex;
+        flex-direction: column;
+        
+      }
+    }
+   
+    .cname-left,{
+      margin-left: 0!important;
+
+     
+    }  
+    .cname{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 90%;
+    margin:  0 0 0 auto;
+
+    @include mediaSm {
+      margin:  0 auto;
+      max-width: 100%;
+    }
+    
+    @include mediaXs {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    .cborder{
+      border-right: 1px solid #BA4141;
+      border-left: 1px solid #BA4141;
+      line-height: 0px;
+
+      @include mediaSm{
+        border-right: 0px solid #BA4141;
+        border-left: 0px solid #BA4141;
+      }
+
+      @include mediaMd{
+        border-right: 0px solid #BA4141;
+        border-left: 0px solid #BA4141;
+      }
+
+      @include mediaLg{
+        border-right: 0px solid #BA4141;
+        border-left: 0px solid #BA4141;
+      }
+
+
+      @include mediaXs{
+        border-right: 0px solid #BA4141;
+        border-left: 0px solid #BA4141;
+      }
+    }
+       
+        span{
+          
+          display: inline-block;
+          padding: 0 0;
+          font-family: 'Rajdhani',sans-serif;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 16px;
+          line-height: 16px;
+          // text-align: center;
+          padding: 10px;
+
+          @include mediaMd {
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+
+          
+          @include mediaSm {
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+
+          
+          @include mediaXs {
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+
+          &:first-child{
+            padding-left: 0px;
+          }
+
+          &:last-child{
+            padding-right: 0px;
+          }
+         
+        } 
+
+    }
+    
+    .pright{
+      padding-right: 7em;
+      @include mediaSm {
+        padding-right: 0;
+      }
+      
+      @include mediaXs {
+        padding-right: 0;
+      }
+
+      p{
+        max-width: 80%;
+        margin: 0 0 0 auto;
+
+        @include mediaSm {
+        margin: 0 auto;
+        }
+        
+        @include mediaXs {
+         
+          margin: 0 auto;
+        }
+      }
+    }
+    .pleft{
+      padding-left: 7em;
+
+      @include mediaLg {
+        padding-left: 4em;
+      }
+      
+      @include mediaSm {
+        padding-left: 0;
+      }
+      
+      @include mediaXs {
+        padding-left: 0;
+      }
+
+      p{
+        max-width: 80%;
+      }
+    }
+    @include mediaSm {
+      min-height: 500px;
+      text-align: center!important;
+    }
+    
+    @include mediaXs {
+      min-height: 400px;
+      text-align: center!important;
+    }
+    
+    
+    
+    .topmargin{
+      margin-top: -10em;
+      @include mediaMd {
+        margin-top: -3em;
+      }
+      
+      @include mediaSm {
+        margin-top: 0;
+      }
+      
+      @include mediaXs {
+        margin-top: 0;
+      }
+    }
+    
+    h2{
+      font-size: calc(13px + 3vw);
+      color:#0C1D4D;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    p{
+      font-size: 16px;
+      color: #656565;
+      line-height: 35px;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 400;
+      @include mediaLg {
+        font-size: 12px;
+        line-height: 24px;
+      }
+      
+      @include mediaMd {
+        font-size: 10px;
+        line-height: 21px;
+      }
+      
+      @include mediaSm {
+        font-size: 14px;
+        line-height: 21px;
+        width: 90%;
+        margin: 0 auto;
+      }
+      
+      @include mediaXs {
+        font-size: 13px;
+        line-height: 21px;
+        width: 90%;
+        margin: 0 auto;
+      }
+      
+    }
+  }
+  
+  
+  .bottom-img{
+    margin-top: -10em;
+    position: relative;
+    
+    @include mediaLg {
+      margin-top: -2em;
+    }
+    @include mediaMd {
+      margin-top: 0;
+    }
+    
+    @include mediaSm {
+      margin-top: 0;
+    }
+    @include mediaXs {
+      margin-top: 0;
+    }
+  }
+}
+
+
+
+
+
+/** Industries Menus Css**/
+
+// .industries-menu{
+  //   height: 100vh;
+  // }
+  
+  // .automotive{
+    //   background: url("/assets/img/industries/rangs_auto.jpg")no-repeat;
+    //   background-size: cover;
+    //   background-position: center center;
+    // }

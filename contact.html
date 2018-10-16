@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="assets/scss/style.css">
+  <title>Rangs | Industries </title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <a href="index.html" class="logo"><img src="assets/img/rangs-logo.svg"/></a>
+        <nav>
+          <div id="menu-toggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navbar">
+            <li><a  href="index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="contact.html" class="nav-active">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- <section class="industries">
+          <div class="top-content">
+            <h2 class="title">Contact</h2>
+            <p>Queries and questions are always welcome at Rangs. Please feel free to get in touch. 
+            </p>
+          </div>
+          <a class="bottom-arrow" id="to-slider-btn" href="#"> <img src="assets/img/right-arrow.svg"/></a>
+        </section> -->
+
+
+        <div class="rg-contact-page-header">
+                <div class="rg-page-header-content">
+                    <h1>contact</h1>
+                    <p>Queries and questions are always welcome at Rangs. Please feel free to get in touch. </p>
+                </div>
+        </div>
+
+
+        <!--=============================
+      Contact and Google Maps
+    =============================-->
+
+<div class="rg-map-area">
+    <div class="rg-office-address-area">
+        <div class="rg-office-address-heading">
+            <h4>Contact Information</h4>
+        </div>
+        <div class="rg-office-address">
+            <div class="caddress address-one">
+                <address>
+                    <h2>HEADQUARTER</h2>
+                    117/A, Bijoy Sarani More, <br/>
+                    Rangs Bhavan <br/>
+                    Dhaka-1000 <br/>
+                    Phone: 8802-9632730-1 <br/>
+                    Fax: 8802-9632733, 8623053
+                </address>
+            </div>
+
+            <div class="caddress address-two">
+                <address>
+                    <h2>HEADQUARTER</h2>
+                    117/A, Bijoy Sarani More, <br/>
+                    Rangs Bhavan <br/>
+                    Dhaka-1000 <br/>
+                    Phone: 8802-9632730-1 <br/>
+                    Fax: 8802-9632733, 8623053
+                </address>
+            </div>
+            <!--<div class="address address-three">-->
+            <!--<address>-->
+            <!--<h2>HEADQUARTER</h2>-->
+            <!--117/A, Bijoy Sarani More, <br/>-->
+            <!--Rangs Bhavan <br/>-->
+            <!--Dhaka-1000 <br/>-->
+            <!--Phone: 8802-9632730-1 <br/>-->
+            <!--Fax: 8802-9632733, 8623053-->
+            <!--</address>-->
+            <!--</div>-->
+            <!--<div class="address address-four">-->
+            <!--<address>-->
+            <!--<h2>HEADQUARTER</h2>-->
+            <!--117/A, Bijoy Sarani More, <br/>-->
+            <!--Rangs Bhavan <br/>-->
+            <!--Dhaka-1000 <br/>-->
+            <!--Phone: 8802-9632730-1 <br/>-->
+            <!--Fax: 8802-9632733, 8623053-->
+            <!--</address>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div id="rg-map"></div>
+
+
+</div>
+
+<div class="rg-footer-area">
+        <div class="container-fluid">
+    
+    
+            <div class="rg-main-footer">
+    
+                <div class="rg-footer-logo">
+                    <a href="">
+                        <img src="./assets/img/rangs-logo.svg" alt="rangs-group-logo">
+                    </a>
+                </div>
+    
+                <div class="rg-footer-social">
+    
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+    
+                </div>
+    
+    
+                <div class="rg-copyright text-center">
+                    <p>Copyright © 2018. All rights reserved by Rangs Group</p>
+                </div>
+    
+    
+            </div>
+    
+    
+    
+        </div>
+    </div>
+  
+    
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/main.js"></script>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMsTZnGiQchkPm1LbG39fwpdO9Jh0vZ34"></script>
+<script type="text/javascript">
+
+    /**
+     * This Script is Only for Google Maps.
+     * Google Maps Api.
+     * Snazzy Maps
+     */
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 11,
+
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(23.7645182, 90.3899401), //Rangs Bhaban, Dhaka
+            // 23.7645182,90.3899401 Rangs Bhaban
+
+            // How you would like to style the map.
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [{
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [{"color": "#e9e9e9"}, {"lightness": 17}]
+            }, {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [{"color": "#f5f5f5"}, {"lightness": 20}]
+            }, {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [{"color": "#ffffff"}, {"lightness": 17}]
+            }, {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [{"color": "#ffffff"}, {"lightness": 29}, {"weight": 0.2}]
+            }, {
+                "featureType": "road.arterial",
+                "elementType": "geometry",
+                "stylers": [{"color": "#ffffff"}, {"lightness": 18}]
+            }, {
+                "featureType": "road.local",
+                "elementType": "geometry",
+                "stylers": [{"color": "#ffffff"}, {"lightness": 16}]
+            }, {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [{"color": "#f5f5f5"}, {"lightness": 21}]
+            }, {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [{"color": "#dedede"}, {"lightness": 21}]
+            }, {
+                "elementType": "labels.text.stroke",
+                "stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"lightness": 16}]
+            }, {
+                "elementType": "labels.text.fill",
+                "stylers": [{"saturation": 36}, {"color": "#333333"}, {"lightness": 40}]
+            }, {"elementType": "labels.icon", "stylers": [{"visibility": "off"}]}, {
+                "featureType": "transit",
+                "elementType": "geometry",
+                "stylers": [{"color": "#f2f2f2"}, {"lightness": 19}]
+            }, {
+                "featureType": "administrative",
+                "elementType": "geometry.fill",
+                "stylers": [{"color": "#fefefe"}, {"lightness": 20}]
+            }, {
+                "featureType": "administrative",
+                "elementType": "geometry.stroke",
+                "stylers": [{"color": "#fefefe"}, {"lightness": 17}, {"weight": 1.2}]
+            }]
+        };
+
+        // Get the HTML DOM element that will contain your map
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('rg-map');
+
+        // Create the Google Map using our element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
+
+        // Let's also add a marker while we're at it
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(23.7645182, 90.3899401),
+            map: map,
+            title: 'Snazzy!'
+        });
+    }
+</script>
+  
+</body>
+</html>

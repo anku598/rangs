@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <link rel="stylesheet" href="assets/scss/style.css">
+  <title>Rangs | Industries </title>
+</head>
+<body>
+  
+  <header class="header" id="header">
+    <a href="index.html" class="logo"><img id="small-img" src="assets/img/rangs-logo.svg"/></a>
+    <nav>
+      <div id="menu-toggle">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navbar">
+        <li><a  href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="industries.html" class="nav-active">Industries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div id="main">
+    <!-- <section class="industries">
+      <div class="top-content">
+        <h2 class="title">Industries</h2>
+        <p>We partner with the biggest global brands with unrivalled experience, offer a wide
+          variation of products and consistent quality in providing services.
+        </p>
+      </div>
+      <a class="bottom-arrow" id="to-slider-btn" href="#" onclick="smoothScroll(document.getElementById('automotive'))"> <img src="assets/img/right-arrow.svg"/></a>
+    </section> -->
+
+    <section class="industries">
+        <div>
+          <h2>Industries</h2>
+          <p>We partner with the biggest global brands with unrivalled experience, offer a wide
+            variation of products and consistent quality in providing services.</p>
+          </div>
+          
+        </section>
+  
+
+    <div class="nav-scroller nav nav-scroller--expand">
+      <nav class="nav-scroller-nav">
+        <ul class="nav-scroller-content">
+          <li class="nav-scroller-item">
+            
+            <button class="horizontal-btn" onclick="smoothScroll(document.getElementById('automotive'))">Automotive</button>
+          </li>
+          <li class="nav-scroller-item">
+              <button class="horizontal-btn" onclick="smoothScroll(document.getElementById('realestate'))">Real Estate</button>
+          </li>
+          <li class="nav-scroller-item">
+              <button class="horizontal-btn" onclick="smoothScroll(document.getElementById('power'))">Power</button>
+          </li>
+          <li class="nav-scroller-item">
+              <button class="horizontal-btn" onclick="smoothScroll(document.getElementById('pharma'))">Pharma</button>
+          </li>
+          <li class="nav-scroller-item">
+              <button class="horizontal-btn" onclick="smoothScroll(document.getElementById('life-style'))">Life Style</button>
+          </li>
+          <li class="nav-scroller-item">
+              <button class="horizontal-btn" onclick="smoothScroll(document.getElementById('construction'))">Construction</button>
+          </li>
+          <li class="nav-scroller-item">
+              <button class="horizontal-btn" onclick="smoothScroll(document.getElementById('food'))">Food & beverage</button>
+          </li>
+          <li class="nav-scroller-item">
+              <button class="horizontal-btn" onclick="smoothScroll(document.getElementById('agro'))">Agro</button>
+          </li>
+          
+        </ul>
+      </nav>
+      
+      <button class="nav-scroller-btn nav-scroller-btn--left">
+        <svg class="icon" width="21" height="32" viewBox="0 0 477.175 477.175" fill="#ffffff"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+          c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+        </button>
+        
+        <button class="nav-scroller-btn nav-scroller-btn--right">
+          <svg class="icon" width="21" height="32" viewBox="0 0 129 129" fill="#ffffff">
+            <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"></path>
+          </svg>
+        </button>
+      </div>
+      
+     <div>
+        <section class="about-industries">
+            <div class="container-fluid p-0">
+              <div class="bg-gap"></div>
+              <!-- <div class="bg-gap2"></div> -->
+              <div class="row tab-content"  id="automotive">
+                <div class="col-md col-sm-12 pr-0 pl-0">
+                  <div class="content-img" data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
+                    <img class="img-fluid rangs_auto" src="/assets/img/industries/rangs_auto.jpg" alt="">
+                  </div>
+                  <!-- <div class="left-tab">  
+                    <a href="#"><p>Rangs Motors Ltd</p></a>
+                    <a  href="#"><p class="active">Rangs Commercial vehicles ltd</p></a>
+                    <a href="#"><p>Zrc Engineering & Automobiles</p></a>
+                  </div> -->
+                </div>
+                <div class="col-md col-sm-12 content pl-0 pr-0 text-right">
+                  <div class="pright" data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-mirror="true">
+                    <h2>Automotive</h2>
+                    <div class="cname cname-right">
+                      <span class="">Rangs Motors Ltd</span>
+                      <span class="cborder">Rangs Commercial vehicles ltd</span>
+                      <span class=""> Zrc Engineering & Automobiles</span>
+                    </div>
+                    <p>The market leader having biggest global automotive brands with unbeatable experience, wide variation of vehicles and consistent quality service.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row columnreverse pb-5 tab-content" id="realestate">
+                <div class="col-md col-sm-12 pr-0 pl-0 content text-left">
+                  <div class="pleft topmargin" data-aos="fade-down"
+                  data-aos-duration="1000">
+                    <h2>Real Estate</h2>
+                    <p>The most distinctive functional and aesthetic living and working space solution with an aim to recreate the lifestyle of the city dwellers.</p>
+                  </div>
+                </div>
+                <div class="col-md col-sm-12 pl-0 pr-0">
+                  <div class="content-img" data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-duration="500"><img class="img-fluid bottom-img" src="/assets/img/industries/rangs_realestate.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="bg-gap2"></div>
+            </div>
+          </section>
+          
+          <section class="about-industries">
+            <div class="container-fluid p-0">
+              <div class="bg-gap"></div>
+              <!-- <div class="bg-gap2"></div> -->
+              <div class="row tab-content" id="power">
+                <div class="col-md pr-0 pl-0">
+                  <div class="content-img" data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"><img class="img-fluid rangs_auto" src="/assets/img/industries/power.jpg" alt=""></div>
+                  <!-- <div class="left-tab">  
+                    <a href="#"><p>Rangs Power Tech</p></a>
+                  </div> -->
+                </div>
+                <div class="col-md content pl-0 pr-0 text-right">
+                  <div class="pright" data-aos="fade-up"
+                  data-aos-duration="1000">
+                    <h2>Power</h2>
+                    <div class="cname cname-right">
+                        <span class="">Rangs Power Tech</span>
+                    </div>
+                    <p>To meet the high expectation of our customers for world class products & to be a leader and role model in diversified power business sector that caters to every human growing need.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row columnreverse pb-5 tab-content" id="pharma">
+                <div class="col-md pr-0 pl-0 content text-left">
+                  <div class="pleft topmargin" data-aos="fade-down"
+                  data-aos-duration="1000">
+                    <h2>Pharma</h2>
+                    <div class="cname cname-left">
+                        <span class="">RANGS PHARMACETUICALS LIMITED</span>
+                    </div>
+                    <p>Tour endeavor is to serve the society in improving quality of life by delivering state of the art products and services through maintenance of ethics creating accelerated opportunities for the employees with innovative ideas.</p>
+                  </div>
+                </div>
+                <div class="col-md pl-0 pr-0">
+                  <div class="content-img" data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-duration="500"><img class="img-fluid bottom-img" src="/assets/img/industries/rangs_pharma.jpg" alt=""></div>
+                  <!-- <div class="right-tab">  
+                    <a href="#"><p>RANGS PHARMACETUICALS LIMITED</p></a>
+                  </div> -->
+                  
+                </div>
+              </div>
+              <div class="bg-gap2"></div>
+            </div>
+          </section>
+          
+          <section class="about-industries">
+            <div class="container-fluid p-0">
+              <div class="bg-gap"></div>
+              <!-- <div class="bg-gap2"></div> -->
+              <div class="row tab-content" id="life-style">
+                <div class="col-md col-sm-12 pr-0 pl-0">
+                  <div class="content-img" data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"><img class="img-fluid rangs_auto" src="/assets/img/industries/lifestyle.jpg" alt=""></div>
+                  <!-- <div class="left-tab">  
+                    <a href="#"><p>RANGS INTERIORS LIMITED</p></a>
+                  </div> -->
+                </div>
+                <div class="col-md col-sm-12 content pl-0 pr-0 text-right">
+                  <div class="pright" data-aos="fade-up"
+                  data-aos-duration="1000">
+                    <h2>lifestyle</h2>
+                    <div class="cname cname-right">
+                        <span class="">RANGS INTERIORS LIMITED</span>
+                    </div>
+                    <p>Design, decor and style solutions for your interiors, both for your
+                      home and your workplace. </p>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+                
+                <div class="row columnreverse pb-5 tab-content" id="construction">
+                  <div class="col-md col-sm-12 pr-0 pl-0 content text-left">
+                    <div class="pleft topmargin" data-aos="fade-down"
+                    data-aos-duration="1000">
+                      <h2>Constructions</h2>
+                      <div class="cname cname-left">
+                        <span class="">Rangs Construstions limited</span>
+                      </div>
+                      <p>From laying the foundation to full operations, we provide turnkey end to end land development services for industrial infrastructure. </p>
+                    </div>
+                    
+                  </div>
+                  <div class="col-md col-sm-12 pl-0 pr-0">
+                    <div class="content-img" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-duration="500"><img class="img-fluid bottom-img" src="/assets/img/industries/rangs_construction.jpg" alt=""></div>
+                    <!-- <div class="right-tab">  
+                      <a href="#"><p>Rangs Construstions limited</p></a>
+                    </div> -->
+                    
+                    
+                  </div>
+                </div>
+                <div class="bg-gap2"></div>
+              </div>
+            </section>
+            
+            <section class="about-industries">
+              <div class="container-fluid p-0">
+                <div class="bg-gap"></div>
+                <!-- <div class="bg-gap2"></div> -->
+                <div class="row tab-content" id="food">
+                  <div class="col-md pr-0 pl-0">
+                    <div class="content-img" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"><img class="img-fluid rangs_auto" src="/assets/img/industries/rangs_food.jpg" alt=""></div>
+                    <!-- <div class="left-tab">  
+                      <a href="#"><p>RANKS FOOD & BEVERAGE LIMITED</p></a>
+                    </div> -->
+                  </div>
+                  <div class="col-md content pl-0 pr-0 text-right">
+                    <div class="pright" data-aos="fade-up"
+                    data-aos-duration="1000">
+                      <h2>Food & Beverage</h2>
+                      <div class="cname cname-right">
+                        <span class="">RANKS FOOD & BEVERAGE LIMITED</span>
+                      </div>
+                      <p>Finest foods for an invigorating experience in all things culinary.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row columnreverse tab-content"  id="agro">
+                  <div class="col-md pr-0 pl-0 content text-left">
+                    <div class="pleft topmargin" data-aos="fade-down"
+                    data-aos-duration="1000">
+                      <h2>Agro</h2>
+                      <div class="cname cname-left">
+                        <span class="">RANKS AGRO BIOTECH</span>
+                        <span class="cborder">ZEST POLYMER</span>
+                        <span class=""> METRO FOILS</span>
+                      </div>
+                      <p>Develop and provide the highest quality, natural and organic alternatives to traditional chemical fertilizer products and to create an environmentally friendly image in the agro industry by creating high quality organic products for the customers.</p>
+                    </div>
+                    
+                    
+                    
+                  </div>
+                  <div class="col-md pl-0 pr-0">
+                    <div class="content-img" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-duration="500"><img class="img-fluid bottom-img" src="/assets/img/industries/rangs_construction.jpg" alt=""></div>
+                    <!-- <div class="right-tab">  
+                      <a href="#"><p>RANKS AGRO BIOTECH</p></a>
+                      <a href="#"><p>ZEST POLYMER</p></a>
+                      <a href="#"><p>METRO FOILS</p></a>
+                    </div>
+                  </div> -->
+                  
+                </div>
+                <div class="bg-gap2"></div>
+              </div>
+            </section>
+     </div>
+      </div>
+
+      <div class="rg-footer-area">
+          <div class="container-fluid">
+      
+      
+              <div class="rg-main-footer">
+      
+                  <div class="rg-footer-logo">
+                      <a href="">
+                          <img src="./assets/img/rangs-logo.svg" alt="rangs-group-logo">
+                      </a>
+                  </div>
+      
+                  <div class="rg-footer-social">
+      
+                      <a href="">
+                          <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="">
+                          <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="">
+                          <i class="fab fa-google-plus-g"></i>
+                      </a>
+                      <a href="">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+      
+                  </div>
+                  <div class="rg-copyright text-center">
+                      <p>Copyright © 2018. All rights reserved by Rangs Group</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="assets/js/navbar.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/horizontalnav.js"></script>
+        
+        <script>
+          
+          window.smoothScroll = function(target) {
+            var scrollContainer = target;
+            do { //find scroll container
+              scrollContainer = scrollContainer.parentNode;
+              if (!scrollContainer) return;
+              scrollContainer.scrollTop += 1;
+            } while (scrollContainer.scrollTop == 0);
+            
+            var targetY = 0;
+            do { //find the top of target relatively to the container
+              if (target == scrollContainer) break;
+              targetY += target.offsetTop;
+            } while (target = target.offsetParent);
+            
+            scroll = function(c, a, b, i) {
+              i++; if (i > 30) return;
+              c.scrollTop = a + (b - a) / 30 * i;
+              setTimeout(function(){ scroll(c, a, b, i); }, 20);
+            }
+            // start scrolling
+            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+          }
+
+            AOS.init({
+            once: true
+          });
+          
+        </script>
+      </body>
+      </html>

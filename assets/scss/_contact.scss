@@ -1,0 +1,208 @@
+/* ======================================
+     Styles for Contact and Google Maps
+   ====================================== */
+
+   .rg-contact-page-header {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 75vh;
+    background: url("../img/contact-cover.jpg") no-repeat, linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-size: cover;
+    background-blend-mode: overlay;
+  
+    .rg-page-header-content {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      max-width: 800px;
+      margin:auto;
+      h1 {
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: calc(22px + 7vmin);
+      }
+      p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        display: inline-block;
+        max-width: 90%;
+      }
+    }
+  }
+   .rg-map-area{
+    position: relative;
+  }
+  #rg-map {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 54vh;
+  }
+  
+  .rg-contact-form {
+    background: #efefef;
+  }
+  
+  form {
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    label {
+      display: block;
+      color: #9d9d9d;
+      sup {
+        color: #CF1D29;
+      }
+    }
+  
+    input {
+      display: block;
+      width: 100%;
+      padding: 20px 10px;
+      color: #707070;
+      border: none;
+      margin-bottom: 15px;
+      &:hover {
+        outline: none;
+      }
+      &:focus {
+        outline: none;
+      }
+  
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #9d9d9d;
+        font-size: 12px;
+        padding-left: 5px;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #9d9d9d;
+        font-size: 12px;
+        padding-left: 5px;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #9d9d9d;
+        font-size: 12px;
+        padding-left: 5px;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #9d9d9d;
+        font-size: 12px;
+        padding-left: 5px;
+      }
+    }
+  
+    input[type=submit] {
+      background: #0C1D4D;
+      color: #ffffff;
+      display: block;
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 0;
+      cursor: pointer;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 26px;
+    }
+    textarea {
+      display: block;
+      width: 100%;
+      border: none;
+    }
+  }
+  
+  .rg-submit-button {
+    margin: 0 -30px -30px;
+    padding: 0;
+  }
+  
+  .rg-office-address-area{
+    display: block;
+    width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top:-86px;
+    right:100px;
+  }
+  
+  @media (max-width: 768px) {
+    .rg-office-address-area{
+      margin: auto;
+      display: block;
+      min-width: 100%;
+      position: static;
+    }
+  }
+  
+  
+  
+  
+  .rg-office-address {
+    background: #0C1D4D;
+    color: #ffffff;
+    padding: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 54vh;
+  }
+  
+  .address {
+   
+    address {
+     
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
+  
+  .rg-office-address-heading {
+    background: #BA4141;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    //margin-top: -85px;
+    h4 {
+      text-transform: uppercase;
+      font-family: 'Rajdhani', sans-serif;
+      margin: 0;
+      padding: 12px 0;
+      font-size: calc(16px + 1vmin);
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .rg-office-address-heading {
+      //margin-top: 30px;
+    }
+  }
+  
+  .caddress {
+    border-bottom: 1px solid #dddddd;
+    padding: 30px 0;
+    font-size: 13px;
+    line-height: 2em;
+
+    @include mediaSm{
+      text-align: center 
+    }
+    @include mediaXs{
+      text-align: center 
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+  
+  .address-four, .address-two {
+    border-bottom: none;
+  }
+  
